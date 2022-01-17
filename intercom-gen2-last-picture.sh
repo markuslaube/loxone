@@ -7,6 +7,8 @@
 # Eigentlich hatte der Hersteller ja eine SIP-Integration versprochen. Mal schauen ob die noch kommt.
 #
 # Autor Markus Laube, markus@laube.email
+# Version: 2022-01-17 21:22 
+# Licence: GNU GENERAL PUBLIC LICENSE 3 - https://github.com/markuslaube/loxone/blob/main/LICENSE
 #
 intercom="172.16.2.190"                                          # Die IP Adresse der InterCom Gen.2
 lastpict="/opt/loxberry/webfrontend/html/tmp/lastpicture.jpg"    # -> Ja das sollte noch hinter das Auth landen

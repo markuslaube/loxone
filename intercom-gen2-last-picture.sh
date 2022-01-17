@@ -9,10 +9,10 @@
 # Autor Markus Laube, markus@laube.email
 #
 intercom="172.16.2.190"                                          # Die IP Adresse der InterCom Gen.2
-tempfile="$(mktemp)"                                             # TempFile für Output aus WebSocket
 lastpict="/opt/loxberry/webfrontend/html/tmp/lastpicture.jpg"    # -> Ja das sollte noch hinter das Auth landen
-#                                                                # In der Fritz steht damit ${loxberry}/tmp/lastpicture.jpg
-
+                                                                 # In der Fritz steht damit ${loxberry}/tmp/lastpicture.jpg
+tempfile="$(mktemp)"                                             # TempFile für Output aus WebSocket
+#
 mv ${lastpict} ${lastpict}.sic                                   # wenn das mal nötig ist können wir ein step back im Fehlerfall einbauen
 #
 #
@@ -40,7 +40,7 @@ sleep 1
 authkey="$(cat ${tempfile}| iconv -c  | grep '\[' | sed 's/.*\["//g' | sed 's/",".*//g')"
 #
 # Das Bild abholen, wir sind ja Authentifiziert :D
-curl --output /tmp/lastpicture.jpg "http://${intercom}/jpg/image.jpg?auth=${authkey}"
+curl --output ${lastpict} "http://${intercom}/jpg/image.jpg?auth=${authkey}"
 #
 # Wir brauchen den Pseudo-WebSocket nicht mehr, also machen wir jetzt das was im Key steht (KILL ME LATER) jetzt
 kill $(ps auxwwww | grep '[0]0KILL0ME0LATER0000000' | awk '{print$2}')

@@ -4,7 +4,7 @@
 # Achtung wscat ist offensichtlich nicht geegnet im Hintergrund zu laufen, das Script ist daher nur CRON-fähig wenn man in pseudotty ein geeignetes Interface - wo nix rein kommt aber in der Theorie könnt wenn man wollte - angbibt
 #
 # Autor Markus Laube, markus@laube.email
-# Version: 2022-01-18 22:00
+# Version: 2022-01-18 22:01
 # Licence: GNU GENERAL PUBLIC LICENSE 3 - https://github.com/markuslaube/loxone/blob/main/LICENSE
 #
 intercom="172.16.2.190:80"                                       # Die IP und der Port der InterCom Gen.2
@@ -48,4 +48,3 @@ rm ${tempfile}
 
 # Nochmal Uhrzeit -> die Differenz in Sekunden kann man dann vom in der Variable wait runter nehmen, bitte Puffer lassen
 echo "DEBUG: Script beendet: $(date)"
-~

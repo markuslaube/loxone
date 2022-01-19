@@ -17,7 +17,7 @@
 # Eigentlich hatte der Hersteller ja eine SIP-Integration versprochen. Mal schauen ob die noch kommt.
 #
 # Autor Markus Laube, markus@laube.email
-# Version: 2022-01-17 21:22 
+# Version: 2022-01-19 19:46 
 # Licence: GNU GENERAL PUBLIC LICENSE 3 - https://github.com/markuslaube/loxone/blob/main/LICENSE
 #
 # echo "DEBUG: Script startet: $(date)"

@@ -13,6 +13,9 @@
 #      Diese übergibt man dann per Copy&Paste an den aiortc client 
 #      Danach sollte die InterCom UDP Pakete versenden.
 #
+# Fachliche Diskussionen laufen hierzu unter: 
+# https://www.loxforum.com/forum/hardware-zubehör-sensorik/330121-loxone-intercom-gen2-webschnittstelle-um-bild-video-rauszubekommen/page2
+#
 # Autor Markus Laube, markus@laube.email
 # Version: 2022-01-20 20:20
 # Licence: GNU GENERAL PUBLIC LICENSE 3 - https://github.com/markuslaube/loxone/blob/main/LICENSE
